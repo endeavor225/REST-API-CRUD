@@ -5,6 +5,7 @@ import Db from "./db/db.js";
 
 const port = 8085;
 
+app.use(express.json());
 app.use(routes);
 
 app.get("/", (req, res) => {
